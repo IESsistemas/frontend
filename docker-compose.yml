@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  webies:
+    container_name: web-ies
+    image: nginx:1.17.1-alpine
+    volumes:
+      - ./prod:/usr/share/nginx/html
+      - ./conf.d:/etc/nginx/conf.d
+      - ./public/banner:/images
+    ports:
+      - 8585:80
+    restart: always
+    networks:
+      iesnetwork:
+        aliases:
+          - fronties
+networks:
+  iesnetwork:
+    name: ies_net
+    driver: bridge

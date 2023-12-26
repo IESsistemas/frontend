@@ -1,0 +1,13 @@
+.card-schedules{
+    background-color: #CBEDF8;
+    padding: 8px;
+    color: #0097CB;
+    border-radius: 8px;
+}
+.badge-schedules{
+    background-color: #0097CB;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 3px 5px;
+    border-radius: 8px;
+}

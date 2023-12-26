@@ -1,0 +1,3 @@
+export const POST_REGULATION = "POST_REGULATION"
+
+
